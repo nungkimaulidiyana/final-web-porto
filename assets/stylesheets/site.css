@@ -1,0 +1,109 @@
+/* VARIABLES */
+
+:root {
+    --color-main: #008000;
+    --color-main-darker: #000;
+    --color-background: #e4e4e4;
+    --color-text: #333447;
+    --color-white: #FFF;
+}
+
+/* ROOT OVERRIDER */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.333;
+}
+
+/* TYPOGRAPHY OVERRIDER */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lexend Deca', serif;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 67px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 37px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 21px;
+}
+
+h6, p {
+    font-size: 16px;
+}
+
+/* LINK OVERRIDER */
+
+a {
+    color: var(--color-main);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* TEXT HELPER */
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* IMAGE HELPER */
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TABLET MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0px;
+    }
+}
+
+/* MOBILE PHONE MEDIA QUERY */
+
+@media screen and (max-width: 480px) {
+
+    /* Custom style goes here */
+}

@@ -1,0 +1,148 @@
+/* FLEX SYSTEM */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  grid-area: about;
+}
+
+.personal-bio {
+  grid-area: personal-bio;
+}
+
+/* HERO ELEMENT */
+.hero {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+.hero-overlay {
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.hero-overlay h1,
+.hero-overlay p {
+  color: var(--color-background);
+}
+
+.hero-overlay p {
+  font-size: x-large;
+}
+
+.hero-overlay .hero-button {
+  background-color: var(--color-main);
+  color: var(--color-background);
+
+  border-radius: 4px;
+  padding: 8px 16px;
+
+  text-decoration: none;
+}
+
+.hero-overlay .hero-button:hover {
+  background-color: var(--color-main-darker);
+}
+
+/* PERSONAL BIO - ELEMENT */
+
+.bio {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* TABLET MEDIA QUERY - ELEMENT */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    margin: 0px 0px;
+  }
+}
+
+/* MOBILE PHONE MEDIA QUERY - ELEMENT */
+
+@media screen and (max-width: 480px) {
+  /* Custom style goes here */
+}
+
+/* GRID SYSTEM WITH MEDIA QUERY */
+/* GRID SYSTEM */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "project1 project2 project3"
+    "project4 project5 project6"
+    "project7 project8 project9";
+  gap: 10px;
+}
+
+.item1 { grid-area: project1; }
+.item2 { grid-area: project2; }
+.item3 { grid-area: project3; }
+.item4 { grid-area: project4; }
+.item5 { grid-area: project5; }
+.item6 { grid-area: project6; }
+.item7 { grid-area: project7; }
+.item8 { grid-area: project8; }
+.item9 { grid-area: project9; }
+
+
+/* TABLET MEDIA QUERY */
+@media all and (max-width: 1279px) {
+  .grid-container {
+    grid-template-areas:
+      "project1 project2"
+      "project3 project4"
+      "project5 project6"
+      "project7 project8"
+      "project9 project9";
+    gap: 10px;
+  }
+}
+
+
+/* TABLET MEDIA QUERY */
+@media all and (max-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      "project1 project2"
+      "project3 project4"
+      "project5 project6"
+      "project7 project8"
+      "project9 project9";
+    gap: 10px;
+  }
+}
+
+/* MOBILE PHONE MEDIA QUERY */
+@media all and (max-width: 480px) {
+  .grid-container {
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5"
+      "project6"
+      "project7"
+      "project8"
+      "project9";
+    gap: 10px;
+  }
+}
