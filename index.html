@@ -7,7 +7,7 @@
     <meta name="keywords" content="The Forest, Ecology, Earth, Vegetation" />
     <title>Nungki Maulidiyana</title>
     <base href="/" />
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="assets/images/nungki pfp.png" />
 
     <!-- Menggunakan Font dari Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,50 +40,75 @@
         /></a>
         <ul>
           <li><a href="/" class="active">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#personal-bio">About Me</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <div class="fixed-social-media">
+      <a href="mailto:nungkimaulidiya@gmail.com" target="_blank">
+        <div class="social-media">
+          <div class="social-media-item">
+            <img src="assets/images/mail_icon.png" />
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/nungki-maulidiyana-143a86287/"
+        target="_blank"
+      >
+        <div class="social-media-item">
+          <img src="assets/images/linkedin-logo-white-5 1.png" />
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nungkimldyn/" target="_blank">
+        <div class="social-media-item">
+          <img src="assets/images/Logo-Instagram-Transparan (1).png" />
+        </div>
+      </a>
+    </div>
+
     <main class="flex-container">
-      <section class="about">
+      <section id="about">
         <div class="hero">
           <div class="hero-overlay">
             <h1>
-              <span style="color: black; font-size: 55px">Hello, I'm</span>
-              <span style="color: #30a8ff; font-size: 55px"
+              <span class="name" style="color: black">Hello, I'm</span>
+              <span class="name" style="color: #30a8ff"
                 >Nungki Maulidiyana</span
               >
             </h1>
-            <p style="color: black; margin: 5px">Childern's Illustrator</p>
-            <img src="assets/images/home img.PNG" width="500px" />
+            <p style="color: black; margin: 5px">Children's Illustrator</p>
+            <img src="assets/images/home img.PNG" />
             <br />
           </div>
         </div>
       </section>
-      <section class="personal-bio">
+      <section id="personal-bio" class="personal-bio">
         <div class="bio">
-          <h5
-            class="text-center"
-            style="font-size: 70px; color: #30a8ff; margin: 40px"
-          >
+          <h5 class="text-center name" style="color: #30a8ff; margin: 40px">
             About Me
           </h5>
           <img
             src="assets/images/nungki pfp.png"
             class="image-center;"
             style="margin: 22px"
+            width="230px"
           />
           <h5
-            class="text-center"
-            style="font-size: xx-large; margin-top: 50px; margin-bottom: 0px"
+            class="text-center name"
+            style="margin-top: 50px; margin-bottom: 0px"
           >
             Nungki Maulidiyana
           </h5>
-          <p class="text-center" style="width: 75%; font-size: 18px">
+          <p
+            class="text-center"
+            style="width: 75%; font-size: 15px; text-align: justify"
+          >
             Hi, I'm Nungki Maulidiyana, children's illustrator and currently 21
-            year old. Art has always been my passion since I was a child, and
+            yearS old. Art has always been my passion since I was a child, and
             I've been fortunate enough to turn that passion into a career
             pursuit. As an illustrator, I find joy creating colorful
             illustrations that bring stories. I believe that every stroke of the
@@ -99,99 +124,135 @@
         </div>
       </section>
 
-      <h5
-        class="text-center"
-        style="font-size: 70px; color: #30a8ff; margin: 40px"
-      >
-        Project
-      </h5>
+      <section id="project">
+        <h5 class="text-center name" style="color: #30a8ff; margin: 40px">
+          Project
+        </h5>
 
-      <!-- GRID SYSTEM START FROM HERE -->
-      <div class="grid-container">
-        <div class="item1">
-          <img
-            src="assets/images/IMM_203_Nungki Maulidiyana_MID_1.jpg"
-            class="image-center"
-            width="400px"
+        <!-- GRID SYSTEM START FROM HERE -->
+        <div class="grid-container">
+          <div class="item1 project-card">
+            <img
+              src="assets/images/IMM_203_Nungki Maulidiyana_MID_1.jpg"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Interactive Multimedia</h4>
+            <p class="text-center">2023</p>
+          </div>
+
+          <div class="item2 project-card">
+            <img
+              src="assets/images/IMM_203_Nungki Maulidiyana_MID_2.jpg"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Interactive Multimedia</h4>
+            <p class="text-center">2023</p>
+          </div>
+
+          <div class="item3 project-card">
+            <img
+              src="assets/images/IMM_203_Nungki Maulidiyana_MID_3.jpg"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Interactive Multimedia</h4>
+            <p class="text-center">2023</p>
+          </div>
+
+          <div class="item4 project-card">
+            <img
+              src="assets/images/1 1.png"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Children's Snack illustration</h4>
+            <p class="text-center">2024</p>
+          </div>
+
+          <div class="item5 project-card">
+            <img
+              src="assets/images/IMG_1642 1.png"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Autobiography Book Cover</h4>
+            <p class="text-center">2023</p>
+          </div>
+
+          <div class="item6 project-card">
+            <img
+              src="assets/images/IMG_1636 1.png"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Children's Snack illustration</h4>
+            <p class="text-center">2024</p>
+          </div>
+
+          <div class="item7 project-card">
+            <img
+              src="assets/images/dk1.png"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Character Design</h4>
+            <p class="text-center">2024</p>
+          </div>
+
+          <div class="item8 project-card">
+            <img
+              src="assets/images/poster illustration.PNG"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Easter Poster illustration</h4>
+            <p class="text-center">2024</p>
+          </div>
+
+          <div class="item9 project-card">
+            <img
+              src="assets/images/dk2.png"
+              class="image-center project-image"
+            />
+            <h4 class="text-center">Character Design</h4>
+            <p class="text-center">2024</p>
+          </div>
+        </div>
+        <!-- GRID LAYOUT ENDS HERE -->
+      </section>
+
+      <section id="contact">
+        <h5 class="text-center name" style="margin-bottom: 0px; color: #30a8ff">
+          Contact
+        </h5>
+        <p class="text-center">
+          I look forward to connecting with you and bringing your creative
+          projects to fruition.
+        </p>
+
+        <div class="flex-container contact-form">
+          <p class="text-no-margin">Name</p>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            style="padding: 5px"
           />
-          <h4 class="text-center">Interactive Multimedia</h4>
-          <p class="text-center">2023</p>
-        </div>
-
-        <div class="item2">
-          <img
-            src="assets/images/IMM_203_Nungki Maulidiyana_MID_2.jpg"
-            class="image-center"
-            width="400px"
+          <p class="text-no-margin">Email</p>
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            style="padding: 5px"
           />
-          <h4 class="text-center">Interactive Multimedia</h4>
-          <p class="text-center">2023</p>
+          <p class="text-no-margin">Message</p>
+          <textarea
+            name=""
+            id=""
+            rows="15"
+            placeholder="Enter Your Message"
+          ></textarea>
+          <button style="width: fit-content; align-self: self-end">
+            Send Message
+          </button>
         </div>
-
-        <div class="item3">
-          <img
-            src="assets/images/IMM_203_Nungki Maulidiyana_MID_3.jpg"
-            class="image-center"
-            width="400px"
-          />
-          <h4 class="text-center">Interactive Multimedia</h4>
-          <p class="text-center">2023</p>
-        </div>
-
-        <div class="item4">
-          <img src="assets/images/1 1.png" class="image-center" width="100%" />
-          <h4 class="text-center">Children's Snack illustration</h4>
-          <p class="text-center">2024</p>
-        </div>
-
-        <div class="item5">
-          <img
-            src="assets/images/IMG_1642 1.png"
-            class="image-center"
-            width="336px"
-          />
-          <h4 class="text-center">Autobiography Book Cover</h4>
-          <p class="text-center">2023</p>
-        </div>
-
-        <div class="item6">
-          <img
-            src="assets/images/IMG_1636 1.png"
-            class="image-center"
-            width="100%"
-          />
-          <h4 class="text-center">Children's Snack illustration</h4>
-          <p class="text-center">2024</p>
-        </div>
-
-        <div class="item7">
-          <img src="assets/images/dk1.png" class="image-center" width="350px" />
-          <h4 class="text-center">Character Design</h4>
-          <p class="text-center">2024</p>
-        </div>
-
-        <div class="item8">
-          <img
-            src="assets/images/poster illustration.PNG"
-            class="image-center"
-            width="100%"
-          />
-          <h4 class="text-center">Easter Poster illustration</h4>
-          <p class="text-center">2024</p>
-        </div>
-
-        <div class="item9">
-          <img src="assets/images/dk2.png" class="image-center" width="350px" />
-          <h4 class="text-center">Character Design</h4>
-          <p class="text-center">2024</p>
-        </div>
-      </div>
-
-      <!-- GRID LAYOUT ENDS HERE -->
+      </section>
     </main>
     <footer>
       <p class="text-center">
-        © 2023. <a href="/">Forest</a> Community. All Rights Reserved.
+        © 2024. <a href="/">nungkimldyn</a>. All Rights Reserved.
       </p>
     </footer>
   </body>

@@ -56,6 +56,47 @@
   background-color: var(--color-main-darker);
 }
 
+.hero-overlay img {
+  width: 500px;
+}
+
+.name {
+  font-size: 50px;
+}
+
+.project-card {
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translate(0, -5px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.project-card h4 {
+  margin: 10px 0px;
+  font-size: medium;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.contact-form {
+  margin: 0px 40px;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 /* PERSONAL BIO - ELEMENT */
 
 .bio {
@@ -82,14 +123,14 @@
 }
 
 /* GRID SYSTEM WITH MEDIA QUERY */
-/* GRID SYSTEM */
 .grid-container {
+  padding: 0px 40px;
   display: grid;
   grid-template-areas:
     "project1 project2 project3"
     "project4 project5 project6"
     "project7 project8 project9";
-  gap: 10px;
+  gap: 20px;
 }
 
 .item1 { grid-area: project1; }
@@ -112,7 +153,15 @@
       "project5 project6"
       "project7 project8"
       "project9 project9";
-    gap: 10px;
+    gap: 20px;
+  }
+
+  .hero-overlay img {
+    width: 50%;
+  }
+
+  .name {
+    font-size: 40px;
   }
 }
 
@@ -126,7 +175,15 @@
       "project5 project6"
       "project7 project8"
       "project9 project9";
-    gap: 10px;
+    gap: 20px;
+  }
+
+  .hero-overlay img {
+    width: 50%;
+  }
+
+  .name {
+    font-size: 30px;
   }
 }
 
@@ -143,6 +200,39 @@
       "project7"
       "project8"
       "project9";
-    gap: 10px;
+    gap: 20px;
   }
+
+  .hero-overlay img {
+    width: 50%;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
+
+.text-no-margin {
+  margin: 0px;
+}
+
+.fixed-social-media {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-item {
+  height: 69px;
+  width: 69px;
+  padding: 10px;
+  background-color: #30A8FF;
 }
