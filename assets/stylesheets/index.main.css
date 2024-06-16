@@ -76,7 +76,6 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-
 .project-card h4 {
   margin: 10px 0px;
   font-size: medium;
@@ -92,9 +91,35 @@
 
 .contact-form {
   margin: 0px 40px;
-  background-color: gray;
+  background-color: rgb(195, 195, 195);
   padding: 20px;
   border-radius: 20px;
+}
+
+.contact-form input {
+  margin-bottom: 10px;
+}
+
+.contact-form input, textarea {
+  margin-top: 5px;
+  background-color: var(--color-white);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.send-button {
+  margin-top: 15px;
+  color: var(--color-white);
+  background-color: #30a8ff;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0072c3;
 }
 
 /* PERSONAL BIO - ELEMENT */
@@ -133,16 +158,33 @@
   gap: 20px;
 }
 
-.item1 { grid-area: project1; }
-.item2 { grid-area: project2; }
-.item3 { grid-area: project3; }
-.item4 { grid-area: project4; }
-.item5 { grid-area: project5; }
-.item6 { grid-area: project6; }
-.item7 { grid-area: project7; }
-.item8 { grid-area: project8; }
-.item9 { grid-area: project9; }
-
+.item1 {
+  grid-area: project1;
+}
+.item2 {
+  grid-area: project2;
+}
+.item3 {
+  grid-area: project3;
+}
+.item4 {
+  grid-area: project4;
+}
+.item5 {
+  grid-area: project5;
+}
+.item6 {
+  grid-area: project6;
+}
+.item7 {
+  grid-area: project7;
+}
+.item8 {
+  grid-area: project8;
+}
+.item9 {
+  grid-area: project9;
+}
 
 /* TABLET MEDIA QUERY */
 @media all and (max-width: 1279px) {
@@ -164,7 +206,6 @@
     font-size: 40px;
   }
 }
-
 
 /* TABLET MEDIA QUERY */
 @media all and (max-width: 768px) {
@@ -234,5 +275,5 @@
   height: 69px;
   width: 69px;
   padding: 10px;
-  background-color: #30A8FF;
+  background-color: #30a8ff;
 }
